@@ -1,19 +1,21 @@
-import { Outlet } from "react-router-dom"
-import Navbar from "../components/Navbar"
-import Footer from "../components/Footer"
+import { Outlet } from "react-router-dom";
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 
 const MainLayouts = () => {
   return (
     <div className=" ">
       <div>
-        <Navbar/>
+        <Navbar />
       </div>
-      <Outlet></Outlet>
+      <div className=" min-h-screen">
+        <Outlet></Outlet>
+      </div>
       <div>
-        <Footer/>
+        <Footer />
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default MainLayouts
+export default MainLayouts;
